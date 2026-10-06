@@ -31,7 +31,7 @@
 这是标准的 DSH bundle，用官方 CLI 安装（本机实测流程）：
 
 ```powershell
-dsh plugin --profile <profile> add file:<插件文件夹绝对路径>
+dsh plugin --profile web add file:<插件文件夹绝对路径>
 # 完全退出并重新打开 Harness
 ```
 
@@ -39,8 +39,8 @@ dsh plugin --profile <profile> add file:<插件文件夹绝对路径>
 会把 `dsh.profile.bundles` 里的注册删掉）：
 
 ```powershell
-dsh plugin --profile <profile> remove dsh-wallpaper-tool
-dsh plugin --profile <profile> add file:<插件文件夹绝对路径>
+dsh plugin --profile web remove dsh-wallpaper-tool
+dsh plugin --profile web add file:<插件文件夹绝对路径>
 ```
 
 装好后：**设置 → 背景壁纸**（六个标签页），侧边栏底部多一个 🖼 快捷面板，`Alt+B` 随时开关。
