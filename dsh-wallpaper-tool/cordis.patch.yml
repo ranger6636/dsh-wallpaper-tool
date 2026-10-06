@@ -1,0 +1,6 @@
+# Wallpaper Studio — loader patch.
+# The Client half renders the background layer and the Settings page; the Host half is inert.
+- insert:
+    - id: wallpaper-studio
+      name: 'dsh-wallpaper-studio'
+      config: {}

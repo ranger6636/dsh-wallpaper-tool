@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Wallpaper Studio">
+  <defs>
+    <linearGradient id="dws-sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f8cff"/>
+      <stop offset="0.55" stop-color="#8b6bff"/>
+      <stop offset="1" stop-color="#21d4c4"/>
+    </linearGradient>
+    <linearGradient id="dws-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="6" width="60" height="52" rx="12" fill="url(#dws-sky)"/>
+  <circle cx="44" cy="22" r="6" fill="#fff" fill-opacity="0.9"/>
+  <path d="M2 44c9-9 16-9 24-2s15 6 22-3 12-6 12-6v19a12 12 0 0 1-12 12H14A12 12 0 0 1 2 52z" fill="url(#dws-hill)" opacity="0.35"/>
+  <path d="M2 50c10-7 17-7 25-1s14 5 21-3 12-4 12-4v8a10 10 0 0 1-10 10H12A10 10 0 0 1 2 50z" fill="url(#dws-hill)"/>
+  <rect x="10" y="26" width="20" height="3.4" rx="1.7" fill="#fff" fill-opacity="0.85"/>
+  <rect x="10" y="34" width="13" height="3.4" rx="1.7" fill="#fff" fill-opacity="0.6"/>
+</svg>

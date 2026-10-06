@@ -1,0 +1,49 @@
+{
+  "name": "dsh-wallpaper-studio",
+  "version": "1.0.7",
+  "description": "Wallpaper Studio for the DeepSeek Harness Web GUI: upload images or videos as a custom background, tune opacity / blur / darken, add animated effects, let the sidebar, transcript and composer show the wallpaper through, run a wallpaper carousel, and crop the framing by hand.",
+  "type": "module",
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale",
+    "src",
+    "tests",
+    "build.mjs",
+    "tsconfig.json",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node build.mjs --check",
+    "test": "node build.mjs && node tests/smoke.cjs"
+  },
+  "meta": {
+    "title": "Wallpaper Studio",
+    "description": "Custom wallpaper background: image/video upload, opacity / blur / darken, dynamic effects, translucent panes, carousel and manual crop."
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}
